@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300&family=Varela&family=Varela+Round&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-white: #fff;
+  --primary-purple: #9A56CB;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.logo {
+  width: 10.25rem
+}
+
+nav a.nav-link {
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.navbar-nav>li>a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: o.1875rem solid var(--primary-dark);
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus {
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-nav>li>a:hover {
+  border-top: 0.1875rem solid var(--primary-purple);
+}
