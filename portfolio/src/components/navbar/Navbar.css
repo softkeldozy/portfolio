@@ -13,7 +13,8 @@ body {
 }
 
 .logo {
-  width: 10.25rem
+  width: 10.25rem;
+  margin-top: 10px;
 }
 
 nav a.nav-link {

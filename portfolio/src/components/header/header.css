@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300&family=Varela&family=Varela+Round&display=swap');
+
+/* Color Variables */
+:root {
+  --primary-white: #fff;
+  --primary-purple: #9A56CB;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-orange: #f9ab00;
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+
+.header-wrapper {
+  position: relative;
+  background: url(header-bg.jpg)no-repeat;
+  filter: brightness(30%);
+  background-size: cover;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+.btn-main-offer {
+  border: 2px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-purple);
+  margin: 2rem;
+}
