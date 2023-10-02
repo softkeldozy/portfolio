@@ -1,5 +1,5 @@
 .skills {
-  max-width: 68.75rem;
+  max-width: 98.75rem;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
@@ -11,11 +11,13 @@
 
 .skills-wrapper img {
   padding: 1.25rem;
+  display: inline-flexbox;
+
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 7.875rem;
+  height: 7.25rem;
 }
 
 .icon-card {

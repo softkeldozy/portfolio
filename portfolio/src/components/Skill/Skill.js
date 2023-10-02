@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skill.css';
-import logo from './assets/icons/html-5-logo-svgrepo-com.svg';
+import logo from './assets/icons/html5-icon-13.jpg';
 import logo1 from './assets/icons/css-svgrepo-com.svg';
 import logo2 from './assets/icons/javascript-svgrepo-com.svg';
 
@@ -38,9 +38,6 @@ function Skill() {
               loading="lazy"
               class="icon icon-card"
             />
-          </div>
-
-          <div class="second-set animate__animated animate__pulse">
             <img
               src={logo3}
               alt=""
@@ -59,8 +56,6 @@ function Skill() {
               loading="lazy"
               class="icon icon-card"
             />
-          </div>
-          <div class="second-set animate__animated animate__pulse">
             <img
               src={logo6}
               alt=""
@@ -79,6 +74,13 @@ function Skill() {
               loading="lazy"
               class="icon icon-card"
             />
+          </div>
+
+          {/* <div class="second-set animate__animated animate__pulse">
+
+          </div> */}
+          <div class="second-set animate__animated animate__pulse">
+
           </div>
         </div>
       </section>
