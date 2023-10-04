@@ -3,6 +3,7 @@ import logo from '../navbar/logo-brand.png';
 import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Navbar = () => {
   return (
@@ -15,16 +16,20 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#home">Home</a>
+              {/* <a className="nav-link" aria-current="page" href="#home">Home</a> */}
+              <Link className="nav-link" to='/'>Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">About me</a>
+              {/* <a className="nav-link" href="#about">About me</a> */}
+              <Link className="nav-link" to='#about' smooth>About Me</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#services">Services</a>
+              {/* <a className="nav-link" href="#services">Services</a> */}
+              <Link className="nav-link" to='#skills' smooth>Skills</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#portfolio">Portfolio</a>
+              {/* <a className="nav-link" href="#projects">Portfolio</a> */}
+              <Link className="nav-link" to='#projects' smooth>Portfolio</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">Contact me</a>

@@ -48,3 +48,8 @@ nav ul li {
 .navbar-nav>li>a:hover {
   border-top: 0.1875rem solid var(--primary-purple);
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+}

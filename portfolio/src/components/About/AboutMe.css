@@ -1,0 +1,17 @@
+.more-about {
+  display: flex;
+}
+
+.head-txt {
+  display: flex;
+  text-align: center;
+}
+
+.about-text {
+  margin-top: 200px;
+}
+
+.aboutimg {
+  width: 100%;
+
+}
