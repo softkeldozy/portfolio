@@ -1,46 +1,96 @@
-import React from 'react'
-import './Contact.css'
+import React from 'react';
+import './Contact.css';
+import twitter from '../contact/icons/icons8-twitterx-50.png';
+import git from '../contact/icons/icons8-github.gif';
+import Linkedin from '../contact/icons/icons8-linkedin.gif';
+import uparrow from '../contact/icons/icons8-up-arrow.gif';
 
 function Contact() {
+  const scrollUp = document.querySelector("#scroll-up");
+
+  scrollUp.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
   return (
-    <div class="about-wrapper" id='contact'>
-      <div class="about-left">
-        <div class="about-left-content">
-          <div>
-            <div class="shadow">
-              <div class="about-img">
-                <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814049__340.png" alt="" />
-              </div>
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
             </div>
-
-            <h2>Learning Robo</h2>
-            <h3>Web developer</h3>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+          <div class="socials">
+            <a href="https://www.twitter.com/softkeldozy" target=""
+            ><img
+                src={twitter}
+                alt="Twitter"
+                loading="lazy"
+                class="socicon"
+              /></a>
+            <a href="https://www.linkedin.com/in/keldozy" target=""
+            ><img
+                src={Linkedin}
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+              /></a>
+            <a href="https://www.github.com/softkeldozy" target=""
+            ><img src={git} alt="Github" class="socicon"
+              /></a>
           </div>
-
-          <ul class="icons">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-linkedin"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-          </ul>
         </div>
-
+        <i class="scroll-up" id="scroll-up"
+        ><img
+            src={uparrow}
+            class="socicon up-arrow"
+            alt="scroll-up"
+          /></i>
       </div>
 
-      <div class="about-right">
-        <h1>Hello<span>!</span></h1>
-        <h2>Here's who I am & what I do</h2>
-        <div class="about-btns">
-          <button type="button" class="btn btn-pink">resume / CV</button>
-          <button type="button" class="btn btn-white">Git hub</button>
-        </div>
-
-        <div class="about-para">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aspernatur possimus ullam quaerat, laboriosam ex voluptate aliquid laborum, obcaecati ratione accusamus! Ea nisi modi dolor nam numquam? Temporibus, molestias amet.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iure tempora alias laudantium sapiente impedit!</p>
-        </div>
-      </div>
-    </div>
+    </section>
   )
 }
 

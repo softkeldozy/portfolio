@@ -16,8 +16,8 @@ function App() {
       <Header />
       <AboutMe />
       <Skill />
-      <Contact />
       <Project />
+      <Contact />
     </BrowserRouter>
   );
 }
