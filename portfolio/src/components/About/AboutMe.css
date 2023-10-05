@@ -1,17 +1,46 @@
-.more-about {
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+.hero {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.abtImgBg {
+  height: 57.5rem;
+  width: 57.5rem;
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .head-txt {
-  display: flex;
-  text-align: center;
+  margin-bottom: var(--bottom-margin);
 }
 
-.about-text {
-  margin-top: 200px;
-}
-
-.aboutimg {
-  width: 100%;
-
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
 }

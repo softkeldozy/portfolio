@@ -6,9 +6,9 @@ import Linkedin from '../contact/icons/icons8-linkedin.gif';
 import uparrow from '../contact/icons/icons8-up-arrow.gif';
 
 function Contact() {
-  const scrollUp = document.querySelector("#scroll-up");
+  // const scrollUp = document.querySelector("#scroll-up");
 
-  scrollUp.addEventListener("click", () => {
+  const handleCLick = ("click", () => {
     window.scrollTo({
       top: 0,
       left: 0,
@@ -22,7 +22,7 @@ function Contact() {
         <div class="contact-form">
           <form action="https://formspree.io/f/xyylngw" method="POST">
             <div class="form-control">
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
@@ -33,7 +33,7 @@ function Contact() {
               />
             </div>
             <div class="form-control">
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
                 id="email"
@@ -44,7 +44,7 @@ function Contact() {
               />
             </div>
             <div class="form-control">
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 id="message"
                 cols="60"
@@ -82,7 +82,7 @@ function Contact() {
               /></a>
           </div>
         </div>
-        <i class="scroll-up" id="scroll-up"
+        <i class="scroll-up" id="scroll-up" onClick={handleCLick}
         ><img
             src={uparrow}
             class="socicon up-arrow"

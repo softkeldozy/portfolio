@@ -7,8 +7,6 @@ body {
 /* ************************************************************************************
 
 ************************************************************************************ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
@@ -109,6 +107,7 @@ body {
 .socicon {
   width: 2rem;
   height: 2rem;
+  opacity: 0.5;
 }
 
 .scroll-up {
@@ -121,4 +120,9 @@ body {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+
+}
+
+.socicon up-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
 }

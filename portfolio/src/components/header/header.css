@@ -13,7 +13,7 @@
 .header-wrapper {
   position: relative;
   background: url(header-bg.jpg)no-repeat;
-  filter: brightness(30%);
+  filter: brightness(90%);
   background-size: cover;
   height: 90vh;
 }
